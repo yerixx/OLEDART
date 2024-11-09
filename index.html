@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- slick slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- scrollTo-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"
+    ></script>
+    <!-- Google Translate -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "ko",
+            includedLanguages: "en,ja,zh-CN,ko",
+            layout: google.translate.TranslateElement.InlineLayout.DROPDOWN, // SIMPLE에서 DROPDOWN으로 변경
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <!-- fontawsome -->
+    <script
+      src="https://kit.fontawesome.com/44357f99e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <title>LG OELD ART</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="header_navigation">
+        <div class="logo">
+          <a href="#">LG OLED ART</a>
+        </div>
+        <ul class="gnb">
+          <li class="whatonNav"><a href="#whaton">what's on</a></li>
+          <li class="artworkNav"><a href="#artwork">artwork</a></li>
+          <li class="artistNav"><a href="#artist">artist</a></li>
+          <li class="contactNav"><a href="#contact">contact</a></li>
+        </ul>
+        <div id="google_translate_element" style="display: none"></div>
+        <div class="sns">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-globe"></i>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="language-modal">
+          <ul class="LangageBtn">
+            <li class="on" data-lang="en">ENG</li>
+            <li data-lang="ko">KOR</li>
+            <li data-lang="ja">JAP</li>
+            <li data-lang="zh-CN">CHN</li>
+          </ul>
+        </div>
+        <ul class="gnbSide">
+          <i class="fa-solid fa-xmark"></i>
+          <li class="homeNav">
+            <a href="#">Home</a>
+          </li>
+          <li class="whatonNav">
+            <a href="#whaton">what's on</a>
+          </li>
+          <li class="artworkNav">
+            <a href="#artwork">artwork</a>
+          </li>
+          <li class="artistNav">
+            <a href="#artist">artist</a>
+          </li>
+          <li class="contactNav">
+            <a href="#contact">contact</a>
+          </li>
+          <ul class="LangageBtn">
+            <li class="on" data-lang="en">ENG</li>
+            <li data-lang="ko">KOR</li>
+            <li data-lang="ja">JAP</li>
+            <li data-lang="zh-CN">CHN</li>
+          </ul>
+        </ul>
+      </nav>
+      <section class="header_content">
+        <article class="header_content_video">
+          <video
+            width="100%"
+            src="./img/data_1_20240529190219.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </article>
+        <article class="inner_text">
+          <h1>We <span>Inspire</span> Art</h1>
+          <div></div>
+          <div class="scroll"></div>
+          <p>scroll down</p>
+        </article>
+      </section>
+    </header>
+    <section id="section">
+      <article class="section_content">
+        <h1>
+          LG OLED becomes <br />
+          a digital canvas
+          <img src="./img/data_2_20220919175127.gif" alt="data" />
+          <span>for artists</span>
+        </h1>
+        <p>
+          LG believes artists can express their imagination and create a new
+          <br />
+          kind of digital art that were never before available.
+        </p>
+      </article>
+    </section>
+    <section id="whaton">
+      <div class="title">
+        <h1>What's on</h1>
+      </div>
+      <article class="whatup_contents">
+        <article class="whatup_content">
+          <img src="./img/whaton1.jpg" alt="whaton1" />
+          <h3>Article</h3>
+          <p>
+            [World Environment Day with LG] LG Hope Screens Promote Restoration
+            for World Environment Day
+          </p>
+        </article>
+        <article class="whatup_content">
+          <img src="./img/whaton2.jpg" alt="whaton2" />
+          <h3>Article</h3>
+          <p>[Tech&] ‘AI’ 프로세서가 만드는 차원이 다른 화질… LG 올레드TV</p>
+        </article>
+      </article>
+    </section>
+    <section id="artwork">
+      <div class="title">
+        <h1>Artwork</h1>
+      </div>
+      <article class="artwork_content">
+        <article class="content_top">
+          <a href="#none">
+            <img src="./img/artwork1.jpg" alt="artwork1" />
+          </a>
+          <div class="artwork_inner_text">
+            <h3>Heart Series : KIM Whanki</h3>
+            <p>KIM Whanki</p>
+          </div>
+        </article>
+        <article class="content_bottom">
+          <article class="content">
+            <img src="./img/artwork2.jpg" alt="artwork2" />
+            <div class="artwork_inner_text">
+              <h3>7-VII-74</h3>
+              <p>Jason Kim</p>
+            </div>
+          </article>
+          <article class="content">
+            <img src="./img/artwork3.jpg" alt="artwork3" />
+            <div class="artwork_inner_text">
+              <h3>7-VI-69 #65</h3>
+              <p>Ahn Mano</p>
+            </div>
+          </article>
+          <article class="content">
+            <img src="./img/artwork4.jpg" alt="artwork4" />
+            <div class="artwork_inner_text">
+              <h3>Untitled</h3>
+              <p>Verseday</p>
+            </div>
+          </article>
+        </article>
+      </article>
+    </section>
+    <section id="artist">
+      <article class="title">
+        <h1>Artist</h1>
+      </article>
+      <article class="artist_content">
+        <article class="artist_video">
+          <iframe
+            width="1200"
+            height="450"
+            src="https://www.youtube.com/embed/gv67smC5DCw?si=HIR0UY88aY8kXYOH&amp;controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </article>
+        <div class="myslider">
+          <div class="slide">
+            <img src="./img/artist1.jpg" alt="artist1" />
+            <p>Quayola</p>
+          </div>
+          <div class="slide">
+            <img src="./img/Artist2.jpg" alt="Artist2" />
+            <p>KIM Whanki</p>
+          </div>
+          <div class="slide">
+            <img src="./img/Artist3.jpg" alt="Artist3" />
+            <p>Anish Kapoor</p>
+          </div>
+          <div class="slide">
+            <img src="./img/Artist4.png" alt="Artist4" />
+            <p>Barry X Ball</p>
+          </div>
+          <div class="slide">
+            <img src="./img/Artist5.png" alt="Artist5" />
+            <p>Jennifer and Kevin McCoy</p>
+          </div>
+          <div class="slide">
+            <img src="./img/Artist6.png" alt="Artist6" />
+            <p>Universal Everything</p>
+          </div>
+          <div class="slide">
+            <img src="./img/Artist7.png" alt="Artist7" />
+            <p>Andrés Reisinger & Julia Esque</p>
+          </div>
+          <div class="slide">
+            <img src="./img/Artist8.png" alt="Artist8" />
+            <p>Refik Anadol</p>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="subscribe">
+      <h1>JOIN OUR NEWSLETTER FOR THE NEWEST <br />IN LG OLED ART</h1>
+      <button>
+        <a href="#none">SUBSCRIBE</a>
+      </button>
+      <p>WHERE TECHNOLOGY ENHANCES ART</p>
+    </section>
+    <section id="contact">
+      <article class="contact_inner">
+        <h1>CONTACT US</h1>
+        <ul>
+          <li><a href="">I'm a visitor</a></li>
+          <li><a href="">I'm an artist</a></li>
+          <li><a href="">I'm a collector</a></li>
+          <li><a href="">I have questions</a></li>
+        </ul>
+      </article>
+    </section>
+    <footer id="footer">
+      <section class="footer_inner">
+        <article class="footer_inner_left">
+          <ul>
+            <li><a href="#none">PRIVACY</a></li>
+            <li><a href="#none">LEGAL</a></li>
+            <li><a href="#none">CEDOC</a></li>
+            <li><a href="#none">SAR</a></li>
+            <li><a href="#none">COMMON</a></li>
+            <li><a href="#none">LG Affiliates</a></li>
+            <li>
+              <a href="#none">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#none"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+          </ul>
+          <p>© 2024 LG Electronics. All Rights Reserved</p>
+        </article>
+        <article class="footer_inner_right">
+          <label for="email">SUBSCRIBE TO OUR NEWSLETTER</label>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="ENTER YOUT EMAIL"
+            />
+            <button>subscribe</button>
+          </div>
+        </article>
+        <article class="gototop">
+          <i class="fa-solid fa-arrow-up"></i>
+        </article>
+      </section>
+    </footer>
+  </body>
+</html>
