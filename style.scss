@@ -65,30 +65,29 @@ body {
 #artist {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   color: map-get($color, main-white);
-
   .title {
     position: sticky;
     top: 0;
     left: 0;
-    width: 300px;
-    min-height: 100vh; // height를 min-height로 변경
+    width: 150px;
+    height: 100vh;
     display: flex;
     align-items: center;
     margin-left: 5%;
     h1 {
       position: absolute;
-      left: 0;
+      left: -50px;
       top: 50%;
       width: 100vh;
-      transform-origin: 0 0;
+      transform-origin: 0 -10px;
       transform: rotate(-90deg) translateX(-40%);
       color: map-get($color, main-white);
-      font: 300 9.375rem/120px "Playfair Display";
+      font: 300 7.3rem/1 "Playfair Display";
       white-space: nowrap;
-      text-align: center; // 텍스트 중앙 정렬
+      text-align: center;
     }
   }
 
@@ -96,9 +95,9 @@ body {
   .whatup_contents,
   .artwork_content,
   .artist_content {
-    width: 1600px;
+    width: 1450px;
     margin: 0 auto;
-    height: 100%;
+    height: 100vh;
   }
 }
 // header
@@ -174,7 +173,7 @@ body {
       background: rgba(0, 0, 0, 0.9);
       padding: 20px;
       border-radius: 8px;
-      display: none; // 초기에는 숨김
+      display: none;
       z-index: 999;
 
       .LangageBtn {
@@ -391,21 +390,19 @@ body {
 //whaton
 #whaton {
   .whatup_contents {
-    width: 1600px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
+    justify-content: center;
+    gap: 50px;
     .whatup_content {
-      margin-left: 20px;
-      width: 680px;
+      width: 100%;
       height: 500px;
       cursor: pointer;
       &:last-child {
         margin-left: 0;
       }
       img {
-        width: 650px;
+        width: 100%;
         height: 400px;
         object-fit: cover;
         padding-bottom: 30px;
@@ -414,7 +411,6 @@ body {
           transform: scale(1.1);
         }
       }
-
       h3 {
         width: 85px;
         margin: 0 0 16px 20px;
@@ -434,7 +430,6 @@ body {
 //artwork
 #artwork {
   .artwork_content {
-    width: 1600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -446,7 +441,7 @@ body {
       a {
         img {
           position: relative;
-          width: 1300px;
+          width: 100%;
           height: 500px;
           object-fit: cover;
           transition: all 0.5s;
@@ -488,7 +483,7 @@ body {
         justify-content: space-between;
         cursor: pointer;
         img {
-          width: 410px;
+          width: 100%;
           height: 200px;
           object-fit: cover;
         }
@@ -522,11 +517,11 @@ body {
 //Artist
 #artist {
   .artist_content {
-    padding-left: 50px;
+    width: 85%;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
     .artist_video {
+      width: 100%;
       margin-bottom: 30px;
     }
     .myslider {
@@ -534,11 +529,10 @@ body {
       gap: 30px;
       cursor: pointer;
       .slide {
-        width: 280px;
-        height: fit-content;
-        overflow: hidden;
+        width: 100%;
+        height: 100%;
         img {
-          width: 280px;
+          width: 250px;
           height: 100%;
           object-fit: cover;
           transition: all 0.3s;
@@ -639,6 +633,7 @@ body {
   height: 200px;
   color: map-get($color, main-white);
   .footer_inner {
+    display: flex;
     width: 100%;
     height: 100%;
     display: flex;
@@ -648,7 +643,7 @@ body {
       ul {
         display: flex;
         align-items: center;
-        gap: 50px;
+        gap: 30px;
         font-size: 1.375rem;
         cursor: pointer;
         & li .fa-brands {
@@ -661,45 +656,49 @@ body {
       }
     }
     .footer_inner_right {
-      label {
-        font-size: 1.375rem;
-        font-weight: 300;
-      }
+      display: flex;
+      gap: 50px;
       div {
-        height: 100%;
-        margin-top: 30px;
-        align-items: flex-end;
-        input[type="email"] {
-          background: none;
-          border: none;
-          font-size: 1rem;
-          border-bottom: 1px solid #888;
-          color: map-get($color, main-white);
-          &::placeholder {
-            padding: 10px;
-            font-size: 0.75rem;
-            line-height: 300px;
-          }
-          &:focus {
-            outline: none;
-          }
+        label {
+          font-size: 1.1rem;
+          font-weight: 300;
         }
-        button {
-          margin-left: 10px;
-          padding: 12px 26px;
-          border-radius: 50px;
-          background: none;
-          background: map-get($color, main-bg);
-          border: none;
-          border: 1px solid #888;
-          color: map-get($color, main-white);
-          font-size: 0.813rem;
-          text-transform: uppercase;
-          cursor: pointer;
-          transition: all 0.3s;
-          &:hover {
-            background: map-get($color, main-white);
-            color: #000;
+        div {
+          height: 100%;
+          margin-top: 30px;
+          align-items: flex-end;
+          input[type="email"] {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            border-bottom: 1px solid #888;
+            color: map-get($color, main-white);
+            &::placeholder {
+              padding: 10px;
+              font-size: 0.75rem;
+              line-height: 300px;
+            }
+            &:focus {
+              outline: none;
+            }
+          }
+          button {
+            margin-left: 10px;
+            padding: 12px 26px;
+            border-radius: 50px;
+            background: none;
+            background: map-get($color, main-bg);
+            border: none;
+            border: 1px solid #888;
+            color: map-get($color, main-white);
+            font-size: 0.813rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+              background: map-get($color, main-white);
+              color: #000;
+            }
           }
         }
       }
@@ -728,19 +727,21 @@ body {
   #whaton,
   #artwork,
   #artist {
+    height: 160vh;
     flex-direction: column;
-    height: auto;
     .title {
       position: relative;
       width: 100%;
-      min-height: auto;
+      height: 200px;
       margin-left: 0;
-      padding: 40px 20px;
+      padding: 0 20px;
       h1 {
         position: relative;
         transform: none;
         width: 100%;
-        font-size: 3rem;
+        font-size: 4.5rem;
+        top: 0;
+        left: 0;
         line-height: 1.2;
         text-align: left;
       }
@@ -749,7 +750,7 @@ body {
     .artwork_content,
     .artist_content {
       width: 100%;
-      padding: 0 20px;
+      padding: 0;
     }
   }
 
@@ -757,8 +758,7 @@ body {
     .header_navigation {
       padding: 15px;
       .logo {
-        border: 1px solid #f00;
-        // margin-left: 10px;
+        margin-left: 10px;
         font-size: 1rem;
       }
       .gnb {
@@ -817,6 +817,7 @@ body {
     .whatup_contents {
       width: 100%;
       flex-direction: column;
+      margin-top: 100px;
       .whatup_content {
         margin-left: 0;
         width: 100%;
@@ -901,12 +902,14 @@ body {
   #subscribe {
     width: 100%;
     height: 100%;
-    padding: 20px 0;
+    margin-top: 250px;
+    gap: 20px;
+    padding: 20px;
     h1 {
-      font-size: 1.8rem;
+      font-size: 1rem;
     }
     button {
-      font-size: 1rem;
+      font-size: 0.8rem;
       cursor: pointer;
     }
     p {
@@ -918,7 +921,6 @@ body {
   #contact {
     width: 100%;
     padding-left: 40px;
-
     .contact_inner {
       width: 100%;
       h1 {
