@@ -121,6 +121,7 @@ body {
     padding: 40px 60px;
     color: map-get($color, main-white);
     .logo {
+      width: 150px;
       font: bold 1.5rem/1rem "noto sans kr";
     }
     .gnb {

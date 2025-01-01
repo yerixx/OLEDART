@@ -122,6 +122,7 @@ body {
   color: #fff;
 }
 #header .header_navigation .logo {
+  width: 150px;
   font: bold 1.5rem/1rem "noto sans kr";
 }
 #header .header_navigation .gnb {
